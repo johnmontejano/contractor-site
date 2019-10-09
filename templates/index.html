@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for product in items %}
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="http://pluspng.com/img-png/png-toy-car-ferrari-car-png-image-900.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> {{ product.product_title }} </h5>
+            <p class="card-text">$ {{ product.price }}</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+  </div>
+{% endfor %}      
+{% endblock %}
